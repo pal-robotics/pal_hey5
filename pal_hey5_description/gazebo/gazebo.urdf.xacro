@@ -20,7 +20,7 @@ limitations under the License.
    <xacro:arg name="namespace" default=""/>
    <xacro:property name="is_multiple" value="$(arg multiple)" />
    <xacro:property name="nsp" value="$(arg namespace)" />
-   <xacro:macro name="hey5_gazebo_simulation" params="side">
+   <xacro:macro name="pal_hey5_gazebo_simulation" params="side">
    <gazebo>
     <plugin filename="libgazebo_underactuated_finger.so" name="gazebo_${side}_thumb">
       <actuatedJoint>${side}_thumb_joint</actuatedJoint>

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.4.0)
-project(hey5_description)
+project(pal_hey5_description)
 
 find_package(ament_cmake_auto REQUIRED)
 
