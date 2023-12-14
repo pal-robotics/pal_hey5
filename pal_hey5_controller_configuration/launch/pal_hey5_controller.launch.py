@@ -1,4 +1,4 @@
-# Copyright (c) 2022 PAL Robotics S.L. All rights reserved.
+# Copyright (c) 2023 PAL Robotics S.L. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,4 +24,4 @@ def generate_launch_description():
         controller_type='joint_trajectory_controller/JointTrajectoryController',
         controller_params_file=os.path.join(
             get_package_share_directory('pal_hey5_controller_configuration'),
-            'config', 'pal_hey5_controllers.yaml'))
+            'config', 'pal_hey5_controller.yaml'))
