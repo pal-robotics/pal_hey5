@@ -2,8 +2,8 @@
 Changelog for package pal_hey5_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.0.0 (2023-12-15)
+------------------
 * updating CHANGELOG package name
 * updating version to 3.8
 * deleting duplicated xacro dependency
