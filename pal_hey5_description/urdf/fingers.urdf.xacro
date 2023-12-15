@@ -18,8 +18,8 @@ limitations under the License.
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
   <!--External resources-->
-  <xacro:include filename="$(find hey5_description)/urdf/deg_to_rad.urdf.xacro" />
-  <xacro:include filename="$(find hey5_description)/urdf/materials.urdf.xacro" />
+  <xacro:include filename="$(find pal_hey5_description)/urdf/deg_to_rad.urdf.xacro" />
+  <xacro:include filename="$(find pal_hey5_description)/urdf/materials.urdf.xacro" />
 
   <!--Constants-->
   <xacro:property name="thumb_abd_min"   value="${  0 * deg_to_rad}" />
@@ -149,14 +149,14 @@ limitations under the License.
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://hey5_description/meshes/finger_abd${vis_suffix}.stl" scale="1 1 ${reflect}" />
+          <mesh filename="package://pal_hey5_description/meshes/finger_abd${vis_suffix}.stl" scale="1 1 ${reflect}" />
         </geometry>
         <material name="Hey5DarkGrey" />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://hey5_description/meshes/finger_abd_collision.stl" scale="1 1 ${reflect}" />
+          <mesh filename="package://pal_hey5_description/meshes/finger_abd_collision.stl" scale="1 1 ${reflect}" />
         </geometry>
       </collision>
     </link>
@@ -193,14 +193,14 @@ limitations under the License.
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://hey5_description/meshes/thumb_abd${vis_suffix}.stl" scale="1 1 ${reflect}" />
+          <mesh filename="package://pal_hey5_description/meshes/thumb_abd${vis_suffix}.stl" scale="1 1 ${reflect}" />
         </geometry>
         <material name="Hey5DarkGrey" />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://hey5_description/meshes/thumb_abd_collision.stl" scale="1 ${reflect} 1" />
+          <mesh filename="package://pal_hey5_description/meshes/thumb_abd_collision.stl" scale="1 ${reflect} 1" />
         </geometry>
       </collision>
     </link>
@@ -284,14 +284,14 @@ limitations under the License.
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://hey5_description/meshes/finger_flex${vis_suffix}.stl" />
+          <mesh filename="package://pal_hey5_description/meshes/finger_flex${vis_suffix}.stl" />
         </geometry>
         <material name="Hey5DarkGrey" />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://hey5_description/meshes/finger_flex_collision.stl" />
+          <mesh filename="package://pal_hey5_description/meshes/finger_flex_collision.stl" />
         </geometry>
       </collision>
     </link>
@@ -330,14 +330,14 @@ limitations under the License.
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://hey5_description/meshes/finger_flex_tip${vis_suffix}.stl" />
+          <mesh filename="package://pal_hey5_description/meshes/finger_flex_tip${vis_suffix}.stl" />
         </geometry>
         <material name="Hey5DarkGrey" />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://hey5_description/meshes/finger_flex_tip_collision.stl" />
+          <mesh filename="package://pal_hey5_description/meshes/finger_flex_tip_collision.stl" />
         </geometry>
       </collision>
     </link>

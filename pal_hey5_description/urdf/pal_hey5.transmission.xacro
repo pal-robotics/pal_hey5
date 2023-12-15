@@ -16,7 +16,7 @@ limitations under the License.
  -->
 
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:macro name="hey5_simple_transmission" params="name reduction" >
+  <xacro:macro name="pal_hey5_simple_transmission" params="name reduction" >
     <transmission name="${name}_trans">
       <plugin>transmission_interface/SimpleTransmission</plugin>
       <actuator name="${name}_actuator" role="actuator1"/>

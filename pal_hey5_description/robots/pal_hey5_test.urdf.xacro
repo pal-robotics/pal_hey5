@@ -15,20 +15,20 @@ See the License for the specific language governing permissions and
 limitations under the License.
  -->
 <robot xmlns:xacro="http://ros.org/wiki/xacro"
-       name="hey5">
+       name="pal_hey5">
   <!--External resources-->
-  <xacro:include filename="$(find hey5_description)/urdf/deg_to_rad.urdf.xacro" />
-  <xacro:include filename="$(find hey5_description)/urdf/hey5_hand.urdf.xacro" />
+  <xacro:include filename="$(find pal_hey5_description)/urdf/deg_to_rad.urdf.xacro" />
+  <xacro:include filename="$(find pal_hey5_description)/urdf/pal_hey5_hand.urdf.xacro" />
 
   <!--Spawn hands-->
   <link name="tool_flange"/>
 
-  <xacro:hey5_hand parent="tool_flange" name="hand_right" reflect="1" >
+  <xacro:pal_hey5_hand parent="tool_flange" name="hand_right" reflect="1" >
     <origin xyz="0 0.13 0" rpy="0 ${-90 * deg_to_rad} ${90 * deg_to_rad}" />
-  </xacro:hey5_hand>
+  </xacro:pal_hey5_hand>
 
-  <xacro:hey5_hand parent="tool_flange" name="hand_left" reflect="-1" >
+  <xacro:pal_hey5_hand parent="tool_flange" name="hand_left" reflect="-1" >
     <origin xyz="0 -0.13 0" rpy="0 ${-90 * deg_to_rad} ${90 * deg_to_rad}" />
-  </xacro:hey5_hand>
+  </xacro:pal_hey5_hand>
 
 </robot>

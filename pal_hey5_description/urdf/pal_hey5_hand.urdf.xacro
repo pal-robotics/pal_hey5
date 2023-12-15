@@ -16,12 +16,12 @@ limitations under the License.
  -->
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
   <!--External resources-->
-  <xacro:include filename="$(find hey5_description)/urdf/actuators.urdf.xacro" />
-  <xacro:include filename="$(find hey5_description)/urdf/deg_to_rad.urdf.xacro" />
-  <xacro:include filename="$(find hey5_description)/urdf/fingers.urdf.xacro" />
-  <xacro:include filename="$(find hey5_description)/urdf/palm.urdf.xacro" />
-  <xacro:include filename="$(find hey5_description)/urdf/transmissions.urdf.xacro" />
-  <xacro:include filename="$(find hey5_description)/gazebo/gazebo.urdf.xacro" />
+  <xacro:include filename="$(find pal_hey5_description)/urdf/actuators.urdf.xacro" />
+  <xacro:include filename="$(find pal_hey5_description)/urdf/deg_to_rad.urdf.xacro" />
+  <xacro:include filename="$(find pal_hey5_description)/urdf/fingers.urdf.xacro" />
+  <xacro:include filename="$(find pal_hey5_description)/urdf/palm.urdf.xacro" />
+  <xacro:include filename="$(find pal_hey5_description)/urdf/transmissions.urdf.xacro" />
+  <xacro:include filename="$(find pal_hey5_description)/gazebo/gazebo.urdf.xacro" />
 
   <!--Constants-->
   <xacro:property name="thumb_act_flex_start"  value="2.0" />
@@ -39,7 +39,7 @@ limitations under the License.
     - reflect: Set to 1 for a right hand, or to -1 for a left hand
     - origin: XML block containing the pose of the palm link with respect to its parent
   -->
-  <xacro:macro name="hey5_hand" params="name parent reflect *origin">
+  <xacro:macro name="pal_hey5_hand" params="name parent reflect *origin">
   <!-- Tool Link -->
     <link name="${name}_tool_link">
       <inertial>
@@ -157,8 +157,8 @@ limitations under the License.
       <origin xyz="0.13 0.02 0" rpy="0 0 0"/>
     </joint>
 
-    <!-- hey5 gazebo plugin -->
-    <xacro:hey5_gazebo_simulation side="${name}"/>
+    <!-- pal_hey5 gazebo plugin -->
+    <xacro:pal_hey5_gazebo_simulation side="${name}"/>
 
   </xacro:macro>
 </robot>
