@@ -85,7 +85,7 @@ limitations under the License.
         <geometry>
           <sphere radius="0.001"/>
         </geometry>
-        <material name="Hey5DarkGrey" />
+        <material name="DarkGrey" />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
