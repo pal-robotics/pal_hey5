@@ -2,6 +2,14 @@
 Changelog for package pal_hey5_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* updating CHANGELOG package name
+* updating version to 3.8
+* deleting duplicated xacro dependency
+* Changing structure of pal_hey5 gripper repo
+* Contributors: Aina Irisarri
+
 3.0.4 (2023-11-14)
 ------------------
 * Add website tag
