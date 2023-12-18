@@ -2,8 +2,8 @@
 Changelog for package pal_hey5_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.0.1 (2023-12-18)
+------------------
 * Move include of materials.urdf.xacro
 * Use pal_urdf_utils materials and deg_to_rad
 * Contributors: Noel Jimenez
