@@ -2,6 +2,9 @@
 Changelog for package pal_hey5_controller_configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 4.0.0 (2023-12-15)
 ------------------
 * rename pal_hey_controllers.yaml into pal_hey_controller.yaml
