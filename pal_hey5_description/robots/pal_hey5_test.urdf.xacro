@@ -18,6 +18,7 @@ limitations under the License.
        name="pal_hey5">
   <!--External resources-->
   <xacro:include filename="$(find pal_urdf_utils)/urdf/deg_to_rad.urdf.xacro" />
+  <xacro:include filename="$(find pal_urdf_utils)/urdf/materials.urdf.xacro" />
   <xacro:include filename="$(find pal_hey5_description)/urdf/pal_hey5_hand.urdf.xacro" />
 
   <!--Spawn hands-->

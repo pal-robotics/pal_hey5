@@ -19,7 +19,6 @@ limitations under the License.
 
   <!--External resources-->
   <xacro:include filename="$(find pal_urdf_utils)/urdf/deg_to_rad.urdf.xacro" />
-  <xacro:include filename="$(find pal_urdf_utils)/urdf/materials.urdf.xacro" />
 
   <!--Constants-->
   <xacro:property name="thumb_abd_min"   value="${  0 * deg_to_rad}" />
