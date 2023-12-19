@@ -76,5 +76,5 @@ def generate_launch_description():
     launch_arguments.add_to_launch_description(ld)
 
     declare_actions(ld, launch_arguments)
-s
+
     return ld
