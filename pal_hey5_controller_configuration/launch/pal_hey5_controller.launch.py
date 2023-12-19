@@ -31,7 +31,7 @@ class LaunchArguments(LaunchArgumentsBase):
         name='side',
         default_value='',
         choices=['', 'left', 'right'],
-        description='side of the gripper')
+        description='side of the end effector')
 
 
 def declare_actions(launch_description: LaunchDescription, launch_args: LaunchArguments):
@@ -51,12 +51,12 @@ def declare_actions(launch_description: LaunchDescription, launch_args: LaunchAr
 def setup_controller_configuration(context: LaunchContext):
 
     side = read_launch_argument('side', context)
-    gripper_suffix = "hand"
+    ee_suffix = "hand"
     if side:
-        gripper_suffix = f"hand_{side}"
+        ee_suffix = f"hand_{side}"
 
-    controller_name = f"{gripper_suffix}_controller"
-    remappings = {"GRIPPER_SUFFIX": gripper_suffix}
+    controller_name = f"{ee_suffix}_controller"
+    remappings = {"EE_SUFFIX": ee_suffix}
     param_file = os.path.join(
         get_package_share_directory('pal_hey5_controller_configuration'),
         'config', 'pal_hey5_controller.yaml')
@@ -76,5 +76,5 @@ def generate_launch_description():
     launch_arguments.add_to_launch_description(ld)
 
     declare_actions(ld, launch_arguments)
-
+s
     return ld
