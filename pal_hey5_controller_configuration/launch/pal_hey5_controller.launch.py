@@ -51,12 +51,12 @@ def declare_actions(launch_description: LaunchDescription, launch_args: LaunchAr
 def setup_controller_configuration(context: LaunchContext):
 
     side = read_launch_argument('side', context)
-    ee_suffix = "hand"
+    ee_prefix = "hand"
     if side:
-        ee_suffix = f"hand_{side}"
+        ee_prefix = f"hand_{side}"
 
-    controller_name = f"{ee_suffix}_controller"
-    remappings = {"EE_SUFFIX": ee_suffix}
+    controller_name = f"{ee_prefix}_controller"
+    remappings = {"EE_SIDE_PREFIX": ee_prefix}
     param_file = os.path.join(
         get_package_share_directory('pal_hey5_controller_configuration'),
         'config', 'pal_hey5_controller.yaml')
