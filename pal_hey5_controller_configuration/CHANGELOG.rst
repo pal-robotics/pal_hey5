@@ -2,8 +2,8 @@
 Changelog for package pal_hey5_controller_configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.1.0 (2024-01-18)
+------------------
 * Merge branch 'tiago-dual-ros2' into 'humble-devel'
   Add parametric yaml file and end_effector side for tiago dual
   See merge request robots/pal_hey5!4
