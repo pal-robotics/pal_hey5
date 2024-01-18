@@ -2,6 +2,17 @@
 Changelog for package pal_hey5_controller_configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'tiago-dual-ros2' into 'humble-devel'
+  Add parametric yaml file and end_effector side for tiago dual
+  See merge request robots/pal_hey5!4
+* Update variable name of gripper_prefix
+* fix typo
+* Change to ee_suffix
+* Add parametric yaml file and gripper side for tiago dual
+* Contributors: David ter Kuile, davidterkuile
+
 4.0.1 (2023-12-18)
 ------------------
 
