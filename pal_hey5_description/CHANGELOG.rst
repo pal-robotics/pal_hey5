@@ -2,6 +2,9 @@
 Changelog for package pal_hey5_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 4.1.0 (2024-01-18)
 ------------------
 
